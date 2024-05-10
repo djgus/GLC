@@ -137,7 +137,7 @@ $form.Show()
 <# Gathering Running Processes #>
 ProgBar "Gathering Running Processes" 45
 $TempPath = $strWorkPath + $strCurrentTime + "_Processes.txt"
-Get-Process | Format-Table -Property ProcessName, CPU, TotalProcessorTime, PagedMemorySize, VirtualMemorySize, NonpagedSystemMemorySize, PagedSystemMemorySize, PeakPagedMemorySize, PeakWorkingSet, PeakVirtualMemorySizeTotalProcessorTime, StartTime, FileVersion, Threads | Out-File -FilePath $TempPath
+Get-Process | Format-Table -Property ProcessName, CPU, Handle, TotalProcessorTime, PagedMemorySize, VirtualMemorySize, NonpagedSystemMemorySize, PagedSystemMemorySize, PeakPagedMemorySize, PeakWorkingSet, PeakVirtualMemorySizeTotalProcessorTime, StartTime, FileVersion, Threads | Out-File -FilePath $TempPath
     
 
 <# Collecting System & Applications Event Logs #>
