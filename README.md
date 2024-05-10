@@ -1,4 +1,4 @@
-# Galaxy Logs Collector v1.1.0
+# Galaxy Logs Collector v1.1.1
 
 This PowerShell script is designed to simplify the process of gathering Galaxy Logs (both user and server-side) for troubleshooting purposes.
 
